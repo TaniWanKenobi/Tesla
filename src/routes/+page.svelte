@@ -85,16 +85,27 @@
 		font-size: 1.2rem;
 		color: rgba(168, 85, 247, 0.9);
 		letter-spacing: 0.2em;
+		text-align: center;
 	}
 
 	.overview {
 		display: grid;
 		gap: 2rem;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.name-card {
+		text-align: center;
+	}
+
+	.name-card h2 {
+		text-align: center;
 	}
 
 	.name-card .name-breakdown {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: 1rem;
 		margin-top: 1rem;
@@ -212,12 +223,29 @@
 		font-style: italic;
 	}
 
+	.time-period {
+		text-align: center;
+	}
+
+	.time-period h2 {
+		text-align: center;
+	}
+
+	.quote-section {
+		text-align: center;
+	}
+
+	.quote-section h2 {
+		text-align: center;
+	}
+
 	.quote-section blockquote {
 		font-size: 1.3rem;
+		text-align: center;
 	}
 
 	.quote-author {
-		text-align: right;
+		text-align: center;
 		color: #a855f7;
 		font-weight: 600;
 	}
