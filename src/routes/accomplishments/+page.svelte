@@ -523,11 +523,12 @@
 	.molecule-item {
 		display: flex;
 		align-items: center;
-		gap: 1rem;
+		gap: 0.75rem;
 		padding: 1rem;
 		background: rgba(0, 212, 255, 0.05);
 		border-radius: 8px;
 		border-left: 4px solid #00d4ff;
+		overflow: hidden;
 	}
 
 	.molecule-item::before {
@@ -535,26 +536,29 @@
 	}
 
 	.molecule-symbol {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		font-weight: 700;
 		color: #a855f7;
 		background: rgba(168, 85, 247, 0.2);
-		padding: 0.5rem 0.75rem;
+		padding: 0.5rem;
 		border-radius: 8px;
-		min-width: 60px;
+		min-width: 50px;
 		text-align: center;
 		font-family: 'Times New Roman', serif;
+		flex-shrink: 0;
 	}
 
 	.molecule-name {
 		font-weight: 600;
 		color: #00d4ff;
-		min-width: 120px;
+		flex-shrink: 0;
 	}
 
 	.molecule-use {
 		color: rgba(240, 248, 255, 0.7);
-		font-size: 0.9rem;
+		font-size: 0.85rem;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
 	}
 
 	@media (min-width: 768px) {
