@@ -77,6 +77,103 @@
 
 	</div>
 
+	<div class="chemistry-formulas card">
+		<h2>Chemical Formulas & Reactions</h2>
+		<p>Tesla's work involved several important chemical and electrochemical processes:</p>
+		
+		<div class="formulas-grid">
+			<div class="formula-card">
+				<h3>Ozone Formation</h3>
+				<p class="context">Tesla coils produce ozone through electrical discharge:</p>
+				<div class="formula">
+					<span class="equation">3O₂ → 2O₃</span>
+				</div>
+				<p class="explanation">Oxygen molecules (O₂) are split by high-voltage electricity and recombine to form ozone (O₃)</p>
+			</div>
+
+			<div class="formula-card">
+				<h3>Nitrogen Fixation</h3>
+				<p class="context">High-voltage arcs can fix atmospheric nitrogen:</p>
+				<div class="formula">
+					<span class="equation">N₂ + O₂ → 2NO</span>
+				</div>
+				<p class="explanation">Nitrogen and oxygen combine under electrical discharge to form nitric oxide</p>
+			</div>
+
+			<div class="formula-card">
+				<h3>Plasma Ionization</h3>
+				<p class="context">Gas ionization in Tesla coil discharges:</p>
+				<div class="formula">
+					<span class="equation">Ar → Ar⁺ + e⁻</span>
+				</div>
+				<p class="explanation">Argon atoms lose electrons to become positive ions, creating plasma</p>
+			</div>
+
+			<div class="formula-card">
+				<h3>Water Electrolysis</h3>
+				<p class="context">Electric current splits water molecules:</p>
+				<div class="formula">
+					<span class="equation">2H₂O → 2H₂ + O₂</span>
+				</div>
+				<p class="explanation">Electrical energy breaks water into hydrogen and oxygen gases</p>
+			</div>
+
+			<div class="formula-card">
+				<h3>Electron Flow</h3>
+				<p class="context">Basic electrical current equation:</p>
+				<div class="formula">
+					<span class="equation">I = Q / t</span>
+				</div>
+				<p class="explanation">Current (I) equals charge (Q) divided by time (t), measured in Amperes</p>
+			</div>
+
+			<div class="formula-card">
+				<h3>Electromagnetic Induction</h3>
+				<p class="context">Faraday's Law (basis for AC generators):</p>
+				<div class="formula">
+					<span class="equation">ε = -dΦ/dt</span>
+				</div>
+				<p class="explanation">Induced voltage (ε) equals the negative rate of change of magnetic flux (Φ)</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="molecules-section card">
+		<h2>Key Molecules & Elements</h2>
+		<div class="molecules-grid">
+			<div class="molecule-item">
+				<span class="molecule-symbol">Cu</span>
+				<span class="molecule-name">Copper</span>
+				<span class="molecule-use">Electrical wiring conductor</span>
+			</div>
+			<div class="molecule-item">
+				<span class="molecule-symbol">O₃</span>
+				<span class="molecule-name">Ozone</span>
+				<span class="molecule-use">Produced by electrical discharge</span>
+			</div>
+			<div class="molecule-item">
+				<span class="molecule-symbol">N₂</span>
+				<span class="molecule-name">Nitrogen</span>
+				<span class="molecule-use">Insulating gas in equipment</span>
+			</div>
+			<div class="molecule-item">
+				<span class="molecule-symbol">Ar</span>
+				<span class="molecule-name">Argon</span>
+				<span class="molecule-use">Plasma discharge tubes</span>
+			</div>
+			<div class="molecule-item">
+				<span class="molecule-symbol">Fe</span>
+				<span class="molecule-name">Iron</span>
+				<span class="molecule-use">Magnetic cores in transformers</span>
+			</div>
+			<div class="molecule-item">
+				<span class="molecule-symbol">SiO₂</span>
+				<span class="molecule-name">Silicon Dioxide</span>
+				<span class="molecule-use">Electrical insulation</span>
+			</div>
+		</div>
+	</div>
+
 	<div class="accomplishments-section">
 		<h2>Major Accomplishments</h2>
 		<div class="accomplishments-grid">
@@ -352,6 +449,114 @@
 		margin-top: 1rem;
 	}
 
+	/* Chemical Formulas Section */
+	.chemistry-formulas h2 {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.chemistry-formulas > p {
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	.formulas-grid {
+		display: grid;
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.formula-card {
+		background: rgba(0, 212, 255, 0.05);
+		border: 1px solid rgba(0, 212, 255, 0.2);
+		border-radius: 12px;
+		padding: 1.5rem;
+		text-align: center;
+	}
+
+	.formula-card h3 {
+		color: #00d4ff;
+		margin: 0 0 0.5rem 0;
+		font-size: 1.1rem;
+	}
+
+	.formula-card .context {
+		font-size: 0.85rem;
+		color: rgba(240, 248, 255, 0.7);
+		margin: 0 0 1rem 0;
+	}
+
+	.formula {
+		background: rgba(168, 85, 247, 0.15);
+		border: 2px solid #a855f7;
+		border-radius: 8px;
+		padding: 1rem;
+		margin: 1rem 0;
+	}
+
+	.equation {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: #a855f7;
+		font-family: 'Times New Roman', serif;
+		letter-spacing: 0.05em;
+	}
+
+	.formula-card .explanation {
+		font-size: 0.85rem;
+		color: rgba(240, 248, 255, 0.8);
+		margin: 0;
+		line-height: 1.5;
+	}
+
+	/* Molecules Section */
+	.molecules-section h2 {
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	.molecules-grid {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.molecule-item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem;
+		background: rgba(0, 212, 255, 0.05);
+		border-radius: 8px;
+		border-left: 4px solid #00d4ff;
+	}
+
+	.molecule-item::before {
+		content: none;
+	}
+
+	.molecule-symbol {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: #a855f7;
+		background: rgba(168, 85, 247, 0.2);
+		padding: 0.5rem 0.75rem;
+		border-radius: 8px;
+		min-width: 60px;
+		text-align: center;
+		font-family: 'Times New Roman', serif;
+	}
+
+	.molecule-name {
+		font-weight: 600;
+		color: #00d4ff;
+		min-width: 120px;
+	}
+
+	.molecule-use {
+		color: rgba(240, 248, 255, 0.7);
+		font-size: 0.9rem;
+	}
+
 	@media (min-width: 768px) {
 		.accomplishments-grid {
 			grid-template-columns: repeat(2, 1fr);
@@ -363,6 +568,24 @@
 
 		.awards-grid {
 			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.formulas-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.molecules-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.formulas-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.molecules-grid {
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 </style>
