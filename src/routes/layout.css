@@ -1,0 +1,218 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@import '@fontsource/fira-mono';
+
+:root {
+	--font-body: 'Segoe UI', Arial, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	--color-bg-0: rgb(10, 10, 30);
+	--color-bg-1: rgb(15, 15, 45);
+	--color-bg-2: rgb(20, 20, 60);
+	--color-electric-blue: #00d4ff;
+	--color-electric-purple: #a855f7;
+	--color-electric-white: #f0f8ff;
+	--color-theme-1: #00d4ff;
+	--color-theme-2: #a855f7;
+	--color-text: rgba(240, 248, 255, 0.9);
+	--column-width: 48rem;
+	--column-margin-top: 4rem;
+	font-family: var(--font-body);
+	color: var(--color-text);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background: linear-gradient(135deg, var(--color-bg-0) 0%, var(--color-bg-1) 50%, var(--color-bg-2) 100%);
+	background-attachment: fixed;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 600;
+	color: var(--color-electric-white);
+}
+
+h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	background: linear-gradient(90deg, var(--color-electric-blue), var(--color-electric-purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color: var(--color-electric-blue);
+	border-bottom: 2px solid var(--color-electric-purple);
+	padding-bottom: 0.5rem;
+	margin-top: 2rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+	color: var(--color-electric-purple);
+}
+
+p {
+	line-height: 1.8;
+	font-weight: 400;
+}
+
+a {
+	color: var(--color-electric-blue);
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: var(--color-electric-purple);
+	text-shadow: 0 0 10px var(--color-electric-blue);
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul li {
+	padding: 0.5rem 0;
+	padding-left: 1.5rem;
+	position: relative;
+}
+
+ul li::before {
+	content: '⚡';
+	position: absolute;
+	left: 0;
+}
+
+blockquote {
+	border-left: 4px solid var(--color-electric-purple);
+	padding-left: 1.5rem;
+	font-style: italic;
+	color: var(--color-electric-white);
+	background: rgba(168, 85, 247, 0.1);
+	padding: 1rem 1.5rem;
+	border-radius: 0 8px 8px 0;
+	margin: 1.5rem 0;
+}
+
+pre {
+	font-size: 14px;
+	font-family: var(--font-mono);
+	background-color: rgba(0, 212, 255, 0.1);
+	border: 1px solid var(--color-electric-blue);
+	border-radius: 8px;
+	padding: 1rem;
+	overflow-x: auto;
+	color: var(--color-text);
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+input, button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button {
+	background: linear-gradient(90deg, var(--color-electric-blue), var(--color-electric-purple));
+	color: white;
+	border: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-weight: 600;
+}
+
+button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
+/* Card styling */
+.card {
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(0, 212, 255, 0.3);
+	border-radius: 12px;
+	padding: 1.5rem;
+	margin: 1rem 0;
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	border-color: var(--color-electric-purple);
+	box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+	transform: translateY(-2px);
+}
+
+/* Glow effects */
+.glow {
+	text-shadow: 0 0 10px var(--color-electric-blue), 0 0 20px var(--color-electric-blue);
+}
+
+.glow-purple {
+	text-shadow: 0 0 10px var(--color-electric-purple), 0 0 20px var(--color-electric-purple);
+}
+
+/* Image styling */
+.portrait {
+	border-radius: 12px;
+	border: 3px solid var(--color-electric-purple);
+	box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+	transition: all 0.3s ease;
+}
+
+.portrait:hover {
+	box-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
+	border-color: var(--color-electric-blue);
+}
+
+/* Prose styling for markdown */
+.prose {
+	color: var(--color-text);
+}
+
+.prose h1, .prose h2, .prose h3 {
+	color: var(--color-electric-white);
+}
+
+.prose a {
+	color: var(--color-electric-blue);
+}
+
+.prose strong {
+	color: var(--color-electric-white);
+}
