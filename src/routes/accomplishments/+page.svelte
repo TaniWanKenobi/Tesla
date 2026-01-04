@@ -53,17 +53,28 @@
 <section class="content">
 	<div class="intro card">
 		<p>
-			Nikola Tesla's accomplishments <strong>revolutionized the modern world</strong>. 
-			His alternating current system made it possible to deliver electricity to homes, 
-			factories, and cities safely and efficiently. This single innovation enabled 
-			virtually every modern technology we depend on today. 
+  			Nikola Tesla's accomplishments <strong>revolutionized the modern world</strong>. 
+   			He is most famous for developing the alternating current (AC) electrical system, 
+    		which made it possible to deliver electricity to homes, factories, and entire cities 
+    		safely and efficiently. This breakthrough not only powered lights and machines but 
+    		also enabled major chemical processes such as electrolysis, where electricity splits 
+    		water into hydrogen and oxygen, and the purification of metals like aluminum through 
+    		high‑temperature molten‑salt reactions. Tesla’s innovations created the electrical 
+    		infrastructure that allowed these reactions to be performed on an industrial scale.
 		</p>
-		<p style="margin-top: 1.5rem;">
-			By allowing power to travel long distances without major losses, Tesla’s system opened the door to widespread electrification, 
-			which in turn fueled advances in communication, medicine, manufacturing, transportation, and everyday life.
-			 Everything from lighting our homes to running hospitals and powering global industries traces back to the foundation he created, 
-			 making his contribution one of the most transformative in human history.
-		</p>
+
+	<p style="margin-top: 1.5rem;">
+    	By allowing power to travel long distances without major losses, Tesla’s AC system 
+    	<strong>opened the door to widespread electrification</strong>, which in turn fueled advances in 
+    	communication, medicine, manufacturing, transportation, and everyday life. His work 
+    	with high‑frequency currents also helped scientists understand how gases ionize, a 
+    	process where electrons collide with atoms such as neon or argon and create glowing 
+    	plasma—reactions still used today in fluorescent lighting and plasma displays. 
+    	Everything from lighting our homes to running hospitals and powering global industries 
+    	traces back to the foundation he created, making his contribution one of the most 
+    	ransformative in human history.
+	</p>
+
 	</div>
 
 	<div class="accomplishments-section">
