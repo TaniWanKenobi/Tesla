@@ -34,7 +34,11 @@
 	</div>
 
 	<div class="portrait-section">
+		
 		<h2>Portrait</h2>
+		
+	<div class="spacer"></div>
+
 		<div 
 			class="portrait-container"
 			role="img"
@@ -97,6 +101,10 @@
 
 	.name-card {
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.name-card h2 {
@@ -109,6 +117,10 @@
 		flex-wrap: wrap;
 		gap: 1rem;
 		margin-top: 1rem;
+	}
+
+	.spacer {
+		height: 2rem;
 	}
 
 	.name-part {
@@ -252,15 +264,35 @@
 
 	@media (min-width: 768px) {
 		.overview {
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: 1fr;
+		}
+
+		.name-card {
+			grid-column: 1;
+			max-width: 600px;
+			margin: 0 auto;
+			width: 100%;
 		}
 
 		.portrait-section {
-			grid-column: span 2;
+			grid-column: 1;
+		}
+
+		.time-period {
+			max-width: 600px;
+			margin: 0 auto;
+			width: 100%;
 		}
 
 		.quote-section {
-			grid-column: span 2;
+			grid-column: 1;
+			max-width: 800px;
+			margin: 0 auto;
+			width: 100%;
+		}
+
+		.spacer {
+			grid-column: 1;
 		}
 	}
 </style>
