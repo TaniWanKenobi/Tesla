@@ -101,9 +101,9 @@
 				<span class="nav-icon">🏆</span>
 				<span class="nav-label">Accomplishments</span>
 			</a>
-			<a href={resolve('/bibliography')} class="nav-card">
-				<span class="nav-icon">📚</span>
-				<span class="nav-label">Bibliography</span>
+			<a href={resolve('/facts')} class="nav-card">
+				<span class="nav-icon">💡</span>
+				<span class="nav-label">Fun Facts</span>
 			</a>
 		</div>
 	</div>

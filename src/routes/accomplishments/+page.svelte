@@ -69,7 +69,7 @@
     	communication, medicine, manufacturing, transportation, and everyday life. His work 
     	with high‑frequency currents also helped scientists understand how gases ionize, a 
     	process where electrons collide with atoms such as neon or argon and create glowing 
-    	plasma—reactions still used today in fluorescent lighting and plasma displays. 
+    	plasma: reactions still used today in fluorescent lighting and plasma displays. 
     	Everything from lighting our homes to running hospitals and powering global industries 
     	traces back to the foundation he created, making his contribution one of the most 
     	ransformative in human history.
